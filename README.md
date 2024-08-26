@@ -4,22 +4,28 @@
 
 ## Descrição
 
-Este projeto é uma aplicação simples de gerenciamento de alunos. A interface permite ao usuário adicionar alunos com suas respectivas notas e frequência, e exibe uma lista de alunos com suas médias e frequência. A interface é minimalista e fácil de usar, adequada para cenários onde uma rápida visualização e atualização de dados de alunos é necessária.
+Este projeto é uma aplicação simples de gerenciamento de alunos, desenvolvida em React. A interface permite ao usuário adicionar alunos com suas respectivas notas e frequência, exibindo uma lista com a média e a frequência de cada aluno. A interface é minimalista e fácil de usar, adequada para cenários onde uma rápida visualização e atualização de dados de alunos é necessária.
 
 ## Instruções para Executar o Sistema
 
 1. **Pré-requisitos**: 
-   - Navegador web moderno (Google Chrome, Firefox, Edge, etc.)
-   - Servidor HTTP simples (opcional, mas recomendado para melhor funcionamento), como [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) do Visual Studio Code.
+   - Node.js instalado em sua máquina.
+   - Gerenciador de pacotes NPM (instalado junto com o Node.js) ou Yarn.
 
-2. **Execução**:
-   - Abra o arquivo `index.html` no seu navegador diretamente ou utilizando um servidor HTTP.
-   - A página será carregada, exibindo os campos para entrada de dados de alunos.
+2. **Instalação**:
+   - Clone o repositório do projeto para sua máquina local.
+   - No terminal, navegue até o diretório do projeto.
+   - Execute o comando `npm install` (ou `yarn install` se estiver usando Yarn) para instalar todas as dependências necessárias.
 
-3. **Uso**:
+3. **Execução**:
+   - No terminal, ainda no diretório do projeto, execute o comando `npm start` (ou `yarn start`).
+   - O projeto será iniciado e estará disponível em `http://localhost:3000/` no seu navegador.
+
+4. **Uso**:
+   - Acesse `http://localhost:3000/` no navegador.
    - Preencha os campos com o nome do aluno, suas notas e frequência.
    - Clique no botão "Adicionar Aluno".
-   - A lista de alunos abaixo será atualizada com a média das notas e a frequência informada.
+   - A lista de alunos será atualizada com a média das notas e a frequência informada.
 
 ## Premissas Assumidas
 
@@ -29,6 +35,7 @@ Este projeto é uma aplicação simples de gerenciamento de alunos. A interface 
 
 ## Decisões de Projeto
 
+- **Framework**: O projeto foi desenvolvido em React, devido à sua capacidade de criar interfaces de usuário dinâmicas e componentizadas.
 - **Interface Simples**: A interface foi desenhada para ser extremamente simples e intuitiva, focando na funcionalidade básica de gerenciamento de alunos.
 - **Cálculo de Média**: A média é calculada automaticamente a partir das notas inseridas, simplificando o processo para o usuário.
 - **Lista de Alunos**: A lista de alunos é atualizada dinamicamente, permitindo ao usuário ver os resultados de suas entradas imediatamente.
@@ -43,3 +50,4 @@ Este projeto é uma aplicação simples de gerenciamento de alunos. A interface 
 ## Licença
 
 Este projeto é de uso livre. Você pode modificá-lo e distribuí-lo como desejar.
+
