@@ -8,12 +8,12 @@ function App() {
     const [alunos, setAlunos] = useState([]);
 
     const handleAddAluno = async () => {
-        await axios.post('http://localhost:3000/alunos', { nome, notas, frequencia });
+        await axios.post('http://localhost:5173/alunos', { nome, notas, frequencia });
         fetchAlunos();
     };
 
     const fetchAlunos = async () => {
-        const response = await axios.get('http://localhost:3000/alunos');
+        const response = await axios.get('http://localhost:5173/alunos');
         setAlunos(response.data.alunos);
     };
 
